@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Glossaire des sigles - Guide des Familles Berry Loire Puisaye</title>
+    <meta name="description" content="Guide des Familles de la Communauté de Communes Berry Loire Puisaye">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Glossaire des sigles - Guide des Familles Berry Loire Puisaye">
+    <meta property="og:description" content="La signification de tous les sigles et abréviations utilisés dans le Guide des Familles (CAF, MSA, PMI, RPE, LAEP...).">
+    <meta property="og:url" content="https://communicationparentalite.github.io/guide-des-familles-ccblp/glossaire.html">
+    <meta property="og:image" content="https://communicationparentalite.github.io/guide-des-familles-ccblp/couverture_page-000.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Guide des Familles Berry Loire Puisaye">
+
+    <style>
+        /* ===== COULEURS SPÉCIFIQUES AU GLOSSAIRE (SARCELLE, neutre) ===== */
+        .page-glossaire {
+            --primary-color: #00897B;
+            --primary-light: #4DB6AC;
+            --primary-dark: #00695C;
+            --secondary-color: #00796B;
+            --secondary-light: #26A69A;
+        }
+
+        /* ============================================================
+           NAVIGATION RAPIDE A-Z
+           ============================================================ */
+        .glossaire-az {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+            margin: 1.5rem 0 2.5rem;
+        }
+
+        .glossaire-az a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.2rem;
+            height: 2.2rem;
+            border-radius: 50%;
+            background: var(--bg-light);
+            color: var(--primary-color);
+            font-weight: 700;
+            text-decoration: none;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .glossaire-az a:hover,
+        .glossaire-az a:focus {
+            background: var(--primary-color);
+            color: #fff;
+        }
+
+        /* ============================================================
+           SECTIONS PAR LETTRE
+           ============================================================ */
+        .glossaire-lettre {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.3rem;
+            margin: 2.5rem 0 1rem;
+            scroll-margin-top: 6rem;
+        }
+
+        .glossaire-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 0;
+        }
+
+        .glossaire-item {
+            background: var(--bg-lighter);
+            border-left: 4px solid var(--primary-color);
+            border-radius: var(--radius);
+            padding: 1rem 1.2rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .glossaire-item dt {
+            font-weight: 800;
+            color: var(--primary-dark);
+            font-size: 1.05rem;
+            margin: 0 0 0.2rem;
+        }
+
+        .glossaire-item .glossaire-sigle-full {
+            display: block;
+            font-weight: 500;
+            font-style: italic;
+            color: var(--text-medium);
+            font-size: 0.95rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .glossaire-item dd {
+            margin: 0;
+            color: var(--text-dark);
+        }
+
+        .glossaire-contact {
+            margin-top: 3rem;
+            padding: 1.2rem 1.5rem;
+            background: var(--bg-light);
+            border-radius: var(--radius);
+            text-align: center;
+        }
+
+        @media (max-width: 480px) {
+            .glossaire-az a {
+                width: 2rem;
+                height: 2rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body class="page-glossaire">
+
+    <!-- ===== HEADER (injecté par script.js) ===== -->
+    <header class="header" id="siteHeader"></header>
+
+      <!-- ===== NAV ===== -->
+   <nav class="nav" id="mainNav"></nav>
+
+    <!-- ===== MAIN ===== -->
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Glossaire des sigles</h2>
+                </div>
+
+                <p class="quote">Vous croisez un sigle dans le guide et ne savez plus ce qu'il signifie ? Retrouvez ici toutes les définitions, classées par ordre alphabétique.</p>
+
+                <!-- ===== NAVIGATION RAPIDE A-Z ===== -->
+                <nav class="glossaire-az" aria-label="Navigation alphabétique du glossaire">
+                    <a href="#lettre-A">A</a>
+                    <a href="#lettre-C">C</a>
+                    <a href="#lettre-D">D</a>
+                    <a href="#lettre-E">E</a>
+                    <a href="#lettre-L">L</a>
+                    <a href="#lettre-M">M</a>
+                    <a href="#lettre-P">P</a>
+                    <a href="#lettre-R">R</a>
+                    <a href="#lettre-S">S</a>
+                    <a href="#lettre-T">T</a>
+                    <a href="#lettre-U">U</a>
+                </nav>
+
+                <!-- ===== A ===== -->
+                <h3 class="glossaire-lettre" id="lettre-A">A</h3>
+                <dl class="glossaire-list">
+                    <div class="glossaire-item">
+                        <dt>ADS<span class="glossaire-sigle-full">Agence Départementale des Solidarités</span></dt>
+                        <dd>Service du Département qui accompagne les familles au quotidien : travailleurs sociaux, PMI, aides diverses. Le territoire dépend de l'ADS Gien-Montargis.</dd>
+                    </div>
+                    <div class="glossaire-item">
+                        <dt>AED<span class="glossaire-sigle-full">Aide Éducative à Domicile</span></dt>
+                        <dd>Accompagnement à domicile pour soutenir les parents dans l'éducation de leurs enfants.</dd>
+                    </div>
+                    <div class="glossaire-item">
+                        <dt>ANTS<span class="glossaire-sigle-full">Agence Nationale des Titres Sécurisés</span></dt>
+                        <dd>Organisme national qui délivre les papiers officiels : carte d'identité, passeport, carte grise, permis de conduire...</dd>
+                    </div>
+                </dl>
+
+                <!-- ===== C ===== -->
+                <h3 class="glossaire-lettre" id="lettre-C">C</h3>
+                <dl class="glossaire-list">
+                    <div class="glossaire-item">
+                        <dt>CAF<span class="glossaire-sigle-full">Caisse d'Allocations Familiales</span></dt>
+                        <dd>Organisme qui verse les prestations et aides familiales (allocations familiales, aide au logement, prime à la naissance...). Pour le territoire : la CAF du Loiret.</dd>
+                    </div>
+                    <div class="glossaire-item">
+                        <dt>CIDFF<span class="glossaire-sigle-full">Centre d'Information sur les Droits des Femmes et des Familles</span></dt>
+                        <dd>Information et accompagnement juridique gratuit, notamment sur le droit de la famille, le droit du travail et l'égalité femmes-hommes.</dd>
+                    </div>
+                    <div class="glossaire-item">
+                        <dt>CLAS<span class="glossaire-sigle-full">Contrat Local d'Accompagnement à la Scolarité</span></dt>
+                        <dd>Soutien scolaire et méthodologique proposé en dehors du temps de classe, pour aider les enfants dans leur scolarité.</dd>
+                    </div>
+                    <div class="glossaire-item">
+                        <dt>CMG<span class="glossaire-sigle-full">Complément de libre choix du Mode de Garde</span></dt>
+                        <dd>Aide financière versée par la CAF aux parents qui font garder leur enfant par un assistant maternel ou une garde à domicile.</dd>
+                    </div>
+                </dl>
+
+                <!-- ===== D ===== -->
+                <h3 class="glossaire-lettre" id="lettre-D">D</h3>
+                <dl class="glossaire-list">
+                    <div class="glossaire-item">
+                        <dt>DPO<span class="glossaire-sigle-full">Délégué à la Protection des Données</span></dt>
+                        <dd>Personne chargée de veiller au respect du RGPD (protection des données personnelles) au sein d'une structure.</dd>
+                    </div>
+                    <div class="glossaire-item">
+                        <dt>DSDEN<span class="glossaire-sigle-full">Direction des Services Départementaux de l'Éducation Nationale</span></dt>
+                        <dd>Services de l'Éducation nationale à l'échelle du département (anciennement "Inspection académique").</dd>
+                    </div>
+                </dl>
+
+                <!-- ===== E ===== -->
+                <h3 class="glossaire-lettre" id="lettre-E">E</h3>
+                <dl class="glossaire-list">
+                    <div class="glossaire-item">
+                        <dt>EVS<span class="glossaire-sigle-full">Espace de Vie Sociale</span></dt>
+                        <dd>Lieu d'accueil et d'animation de proximité pour les habitants et les familles, agréé par la CAF.</dd>
+                    </div>
+                </dl>
+
+                <!-- ===== L ===== -->
+                <h3 class="glossaire-lettre" id="lettre-L">L</h3>
+                <dl class="glossaire-list">
+                    <div class="glossaire-item">
+                        <dt>LAEP<span class="glossaire-sigle-full">Lieu d'Accueil Enfants-Parents</span></dt>
+                        <dd>Espace convivial et gratuit pour les enfants de moins de 6 ans accompagnés d'un parent, propice au jeu et à la socialisation (sur le territoire : La Marelle).</dd>
+                    </div>
+                </dl>
+
+                <!-- ===== M ===== -->
+                <h3 class="glossaire-lettre" id="lettre-M">M</h3>
+                <dl class="glossaire-list">
+                    <div class="glossaire-item">
+                        <dt>MAM<span class="glossaire-sigle-full">Maison d'Assistantes Maternelles</span></dt>
+                        <dd>Lieu où plusieurs assistantes maternelles agréées par la PMI accueillent ensemble des enfants, en dehors de leur propre domicile.</dd>
+                    </div>
+                    <div class="glossaire-item">
+                        <dt>MSA<span class="glossaire-sigle-full">Mutualité Sociale Agricole</span></dt>
+                        <dd>Organisme de protection sociale du monde agricole, qui joue le rôle de la CAF et de la Sécurité sociale pour ses adhérents. Pour le territoire : MSA Beauce Cœur de Loire.</dd>
+                    </div>
+                </dl>
+
+                <!-- ===== P ===== -->
+                <h3 class="glossaire-lettre" id="lettre-P">P</h3>
+                <dl class="glossaire-list">
+                    <div class="glossaire-item">
+                        <dt>PAF<span class="glossaire-sigle-full">Programme d'Animations Familiales</span></dt>
+                        <dd>Ensemble d'ateliers et de temps forts proposés tout au long de l'année aux familles du territoire.</dd>
+                    </div>
+                    <div class="glossaire-item">
+                        <dt>PMI<span class="glossaire-sigle-full">Protection Maternelle et Infantile</span></dt>
+                        <dd>Service du Département qui assure suivi médical, consultations et conseils gratuits pour les femmes enceintes et les enfants jusqu'à 6 ans.</dd>
+                    </div>
+                    <div class="glossaire-item">
+                        <dt>PRH45<span class="glossaire-sigle-full">Pôle Ressources Handicap 45</span></dt>
+                        <dd>Accompagnement gratuit pour favoriser l'inclusion des enfants en situation de handicap dans les modes d'accueil du quotidien (crèche, assistant maternel, loisirs...).</dd>
+                    </div>
+                </dl>
+
+                <!-- ===== R ===== -->
+                <h3 class="glossaire-lettre" id="lettre-R">R</h3>
+                <dl class="glossaire-list">
+                    <div class="glossaire-item">
+                        <dt>RGAA<span class="glossaire-sigle-full">Référentiel Général d'Amélioration de l'Accessibilité</span></dt>
+                        <dd>Ensemble de règles qui garantissent qu'un site internet est accessible à tous, y compris aux personnes en situation de handicap.</dd>
+                    </div>
+                    <div class="glossaire-item">
+                        <dt>RGPD<span class="glossaire-sigle-full">Règlement Général sur la Protection des Données</span></dt>
+                        <dd>Réglementation européenne qui protège les données personnelles des usagers.</dd>
+                    </div>
+                    <div class="glossaire-item">
+                        <dt>RPE<span class="glossaire-sigle-full">Relais Petite Enfance</span></dt>
+                        <dd>Service qui informe et accompagne gratuitement les parents et les assistants maternels dans la recherche d'un mode d'accueil individuel.</dd>
+                    </div>
+                    <div class="glossaire-item">
+                        <dt>RPI<span class="glossaire-sigle-full">Regroupement Pédagogique Intercommunal</span></dt>
+                        <dd>Plusieurs communes qui mettent en commun leurs écoles pour maintenir une offre scolaire de proximité.</dd>
+                    </div>
+                </dl>
+
+                <!-- ===== S ===== -->
+                <h3 class="glossaire-lettre" id="lettre-S">S</h3>
+                <dl class="glossaire-list">
+                    <div class="glossaire-item">
+                        <dt>SDAEP<span class="glossaire-sigle-full">Service d'Accompagnement Éducatif à la Parentalité</span></dt>
+                        <dd>Dispositif de soutien aux parents dans leur rôle éducatif au quotidien.</dd>
+                    </div>
+                    <div class="glossaire-item">
+                        <dt>SEGPA<span class="glossaire-sigle-full">Section d'Enseignement Général et Professionnel Adapté</span></dt>
+                        <dd>Classe de collège adaptée aux élèves rencontrant des difficultés scolaires importantes et durables.</dd>
+                    </div>
+                    <div class="glossaire-item">
+                        <dt>SIIS<span class="glossaire-sigle-full">Nom porté par plusieurs syndicats intercommunaux scolaires du Loiret</span></dt>
+                        <dd>Regroupements de communes qui gèrent ensemble les écoles, la cantine et le transport scolaire (ex : SIIS Cernoy/Pierrefitte, SIIS Adon/La Bussière).</dd>
+                    </div>
+                    <div class="glossaire-item">
+                        <dt>SIS<span class="glossaire-sigle-full">Service d'Intervention Sociale (de la CAF)</span></dt>
+                        <dd>Accompagnement social proposé par la CAF pour les allocataires qui traversent une période difficile.</dd>
+                    </div>
+                </dl>
+
+                <!-- ===== T ===== -->
+                <h3 class="glossaire-lettre" id="lettre-T">T</h3>
+                <dl class="glossaire-list">
+                    <div class="glossaire-item">
+                        <dt>TER<span class="glossaire-sigle-full">Territoire Éducatif Rural</span></dt>
+                        <dd>Dispositif national qui renforce les liens entre les écoles, les collèges et les acteurs locaux dans les territoires ruraux.</dd>
+                    </div>
+                </dl>
+
+                <!-- ===== U ===== -->
+                <h3 class="glossaire-lettre" id="lettre-U">U</h3>
+                <dl class="glossaire-list">
+                    <div class="glossaire-item">
+                        <dt>ULIS<span class="glossaire-sigle-full">Unité Localisée pour l'Inclusion Scolaire</span></dt>
+                        <dd>Dispositif qui permet à des élèves en situation de handicap d'être scolarisés en milieu ordinaire, avec un accompagnement adapté.</dd>
+                    </div>
+                    <div class="glossaire-item">
+                        <dt>URSSAF<span class="glossaire-sigle-full">Union de Recouvrement des cotisations de Sécurité Sociale et d'Allocations Familiales</span></dt>
+                        <dd>Organisme qui collecte les cotisations sociales, notamment via Pajemploi pour les parents employeurs d'un assistant maternel ou d'une garde à domicile.</dd>
+                    </div>
+                </dl>
+
+                <p class="glossaire-contact">Un sigle manque ou une définition vous semble incorrecte ?<br>
+                Écrivez-nous à <a href="mailto:contact@cc-berryloirepuisaye.fr">contact@cc-berryloirepuisaye.fr</a></p>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER (injecté par script.js) ===== -->
+    <footer class="footer" id="siteFooter"></footer>
+
+    <!-- ===== SCRIPT UNIFIÉ ===== -->
+    <script src="script.js"></script>
+</body>
+</html>
