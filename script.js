@@ -244,7 +244,8 @@
                     '<div class="footer-section">' +
                         '<h3>Liens utiles</h3>' +
                         '<ul>' +
-                            '<li><a href="mentions-legales.html">Mentions légales</a></li>' +
+                            '<li><a href="glossaire.html">Glossaire des sigles</a></li>' +
+           '<li><a href="mentions-legales.html">Mentions légales</a></li>' +
                             '<li><a href="https://www.cc-berryloirepuisaye.fr" target="_blank" rel="noopener">Site de la Communauté de Communes</a></li>' +
                             '<li><a href="https://www.caf.fr" target="_blank" rel="noopener">CAF du Loiret</a></li>' +
                             '<li><a href="https://www.service-public.fr" target="_blank" rel="noopener">Service Public</a></li>' +
