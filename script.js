@@ -168,9 +168,9 @@
                 '</li>' +
 
                 '<li class="nav-dropdown dropdown-acces-droits">' +
-                    '<a href="acces-droits.html" class="nav-link-acces-droits">Accès aux droits</a>' +
+                    '<a href="acces-droits.html" class="nav-link-acces-droits">Accès aux droits et accompagnement</a>' +
                     '<ul class="nav-dropdown-menu">' +
-                        '<li><a href="acces-droits.html" class="nav-dropdown-main-link">Voir la page Accès aux droits</a></li>' +
+                        '<li><a href="acces-droits.html" class="nav-dropdown-main-link">Voir la page Accès aux droits et accompagnement</a></li>' +
                         '<li><a href="acces-droits.html#franceservice">Réseau France Services</a></li>' +
                         '<li><a href="acces-droits.html#ads">Agence Départementale des Solidarités (ADS)</a></li>' +
                         '<li><a href="acces-droits.html#sis">Service d\'Intervention Sociale de la CAF</a></li>' +
