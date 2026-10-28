@@ -2,6 +2,7 @@
    GUIDE DES FAMILLES - BERRY LOIRE PUISAYE
    Script JS unifié - Septembre 2026
    Inclut Pagefind (recherche interne) + injection de la navigation
+   + GoatCounter (statistiques de visite)
    ============================================================ */
 
 (function () {
@@ -866,7 +867,21 @@
     }
 
     /* ============================================================
-       22. INITIALISATION
+       22. GOATCOUNTER — Statistiques de visite
+       ============================================================ */
+    function initGoatCounter() {
+        // Éviter les doublons si le script est déjà chargé
+        if (document.querySelector('script[data-goatcounter]')) return;
+
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = '//gc.zgo.at/count.js';
+        script.setAttribute('data-goatcounter', 'https://guide-familles-ccblp.goatcounter.com/count');
+        document.body.appendChild(script);
+    }
+
+    /* ============================================================
+       23. INITIALISATION
        ============================================================ */
     function init() {
         initHeader();
@@ -887,6 +902,9 @@
         initCartesDepliables();
         initMairiesDepliables();
         initDates();
+
+        // ✅ Statistiques de visite
+        initGoatCounter();
 
         setTimeout(openAccordionFromHash, 100);
         window.addEventListener('hashchange', openAccordionFromHash);
