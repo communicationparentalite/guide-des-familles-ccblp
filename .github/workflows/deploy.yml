@@ -27,9 +27,21 @@ jobs:
         id: last-commit
         run: echo "date=$(git log -1 --format=%cd --date=format:'%d %B %Y')" >> $GITHUB_OUTPUT
 
+      - name: Get ISO Date
+        id: iso-date
+        run: echo "date=$(date -u +%Y-%m-%d)" >> $GITHUB_OUTPUT
+
       - name: Inject Date into Script
         run: |
           sed -i "s|<!-- LAST_UPDATED -->|${{ steps.last-commit.outputs.date }}|g" script.js
+
+      # ✅ NOUVEAU : Mise à jour automatique du sitemap.xml
+      - name: Update Sitemap lastmod
+        run: |
+          echo "📅 Mise à jour des dates dans sitemap.xml → ${{ steps.iso-date.outputs.date }}"
+          sed -i "s|<lastmod>[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}</lastmod>|<lastmod>${{ steps.iso-date.outputs.date }}</lastmod>|g" sitemap.xml
+          echo "✅ sitemap.xml mis à jour"
+          grep "<lastmod>" sitemap.xml | head -3
 
       - name: Build Pagefind Index
         run: npx -y pagefind --site .
