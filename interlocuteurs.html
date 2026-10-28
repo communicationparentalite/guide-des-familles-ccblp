@@ -13,8 +13,8 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Interlocuteurs clés - Guide des Familles Berry Loire Puisaye">
     <meta property="og:description" content="Mairies, Communauté de Communes, CAF, MSA, ADS : tous les contacts utiles pour les familles du territoire.">
-    <meta property="og:url" content="https://communicationparentalite.github.io/guide-des-familles/interlocuteurs.html">
-    <meta property="og:image" content="https://communicationparentalite.github.io/guide-des-familles/interlocuteurs_page-000.png">
+    <meta property="og:url" content="https://communicationparentalite.github.io/guide-des-familles-ccblp/interlocuteurs.html">
+    <meta property="og:image" content="https://communicationparentalite.github.io/guide-des-familles-ccblp/interlocuteurs_page-000.png">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="Guide des Familles Berry Loire Puisaye">
 
@@ -30,9 +30,6 @@
             --secondary-light: #5B92C4;
         }
 
-        /* ============================================================
-           LAYOUT "LOGO + TEXTE" DANS LES ACCORDÉONS
-           ============================================================ */
         .accordion-content-row {
             display: flex;
             flex-direction: column;
@@ -93,7 +90,6 @@
             }
         }
 
-        /* Coordonnées visibles sous le texte court */
         .accordion-coords {
             background: #f4f6fa;
             border-left: 4px solid var(--primary-color);
@@ -116,7 +112,6 @@
             color: var(--primary-dark);
         }
 
-        /* Image CC plus grande */
         .cc-image-wrapper {
             margin-top: 1.5rem;
             display: flex;
@@ -143,9 +138,6 @@
             }
         }
 
-        /* ============================================================
-           CARTES MAIRIES REPLIABLES
-           ============================================================ */
         .mairie-card {
             background: white;
             border-radius: 10px;
@@ -280,26 +272,19 @@
 </head>
 <body class="page-interlocuteurs">
 
-    <!-- ===== HEADER (injecté par script.js) ===== -->
     <header class="header" id="siteHeader"></header>
+    <nav class="nav" id="mainNav"></nav>
 
-      <!-- ===== NAV ===== -->
-   <nav class="nav" id="mainNav"></nav>
-
-    <!-- ===== MAIN ===== -->
     <main>
         <section class="section">
             <div class="container">
-                <!-- Bannière -->
                 <div class="section-header">
                     <img src="interlocuteurs_page-000.png" alt="Interlocuteurs">
                 </div>
                 <h2 class="section-title">Des interlocuteurs clés</h2>
 
-                <!-- ===== ACCORDÉON ===== -->
                 <div class="accordion">
 
-                    <!-- ===== 1. MAIRIES ===== -->
                     <div class="accordion-item" id="mairies">
                         <button class="accordion-header" aria-expanded="false">
                             <span>Mairies <span class="count">20 communes</span></span>
@@ -311,7 +296,6 @@
                             </p>
                             <div class="accordion-card-grid">
 
-                                <!-- Adon -->
                                 <div class="mairie-card" id="mairie-adon" data-mairie="adon">
                                     <div class="mairie-card-header">
                                         <h4>Adon</h4>
@@ -332,7 +316,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Autry-le-Châtel -->
                                 <div class="mairie-card" id="mairie-autry" data-mairie="autry">
                                     <div class="mairie-card-header">
                                         <h4>Autry-le-Châtel</h4>
@@ -352,7 +335,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Batilly-en-Puisaye -->
                                 <div class="mairie-card" id="mairie-batilly" data-mairie="batilly">
                                     <div class="mairie-card-header">
                                         <h4>Batilly-en-Puisaye</h4>
@@ -372,7 +354,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Beaulieu-sur-Loire -->
                                 <div class="mairie-card" id="mairie-beaulieu" data-mairie="beaulieu">
                                     <div class="mairie-card-header">
                                         <h4>Beaulieu-sur-Loire</h4>
@@ -393,7 +374,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Bonny-sur-Loire -->
                                 <div class="mairie-card" id="mairie-bonny" data-mairie="bonny">
                                     <div class="mairie-card-header">
                                         <h4>Bonny-sur-Loire</h4>
@@ -414,7 +394,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Breteau -->
                                 <div class="mairie-card" id="mairie-breteau" data-mairie="breteau">
                                     <div class="mairie-card-header">
                                         <h4>Breteau</h4>
@@ -433,7 +412,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Briare -->
                                 <div class="mairie-card" id="mairie-briare" data-mairie="briare">
                                     <div class="mairie-card-header">
                                         <h4>Briare</h4>
@@ -454,7 +432,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Cernoy-en-Berry -->
                                 <div class="mairie-card" id="mairie-cernoy" data-mairie="cernoy">
                                     <div class="mairie-card-header">
                                         <h4>Cernoy-en-Berry</h4>
@@ -474,7 +451,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Champoulet -->
                                 <div class="mairie-card" id="mairie-champoulet" data-mairie="champoulet">
                                     <div class="mairie-card-header">
                                         <h4>Champoulet</h4>
@@ -493,7 +469,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Châtillon-sur-Loire -->
                                 <div class="mairie-card" id="mairie-chatillon" data-mairie="chatillon">
                                     <div class="mairie-card-header">
                                         <h4>Châtillon-sur-Loire</h4>
@@ -513,7 +488,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Dammarie-en-Puisaye -->
                                 <div class="mairie-card" id="mairie-dammarie" data-mairie="dammarie">
                                     <div class="mairie-card-header">
                                         <h4>Dammarie-en-Puisaye</h4>
@@ -533,7 +507,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Escrignelles -->
                                 <div class="mairie-card" id="mairie-escrignelles" data-mairie="escrignelles">
                                     <div class="mairie-card-header">
                                         <h4>Escrignelles</h4>
@@ -554,7 +527,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Faverelles -->
                                 <div class="mairie-card" id="mairie-faverelles" data-mairie="faverelles">
                                     <div class="mairie-card-header">
                                         <h4>Faverelles</h4>
@@ -573,7 +545,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Feins-en-Gâtinais -->
                                 <div class="mairie-card" id="mairie-feins" data-mairie="feins">
                                     <div class="mairie-card-header">
                                         <h4>Feins-en-Gâtinais</h4>
@@ -592,7 +563,6 @@
                                     </div>
                                 </div>
 
-                                <!-- La Bussière -->
                                 <div class="mairie-card" id="mairie-bussiere" data-mairie="bussiere">
                                     <div class="mairie-card-header">
                                         <h4>La Bussière</h4>
@@ -613,7 +583,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Ousson-sur-Loire -->
                                 <div class="mairie-card" id="mairie-ousson" data-mairie="ousson">
                                     <div class="mairie-card-header">
                                         <h4>Ousson-sur-Loire</h4>
@@ -632,7 +601,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Ouzouër-sur-Trézée -->
                                 <div class="mairie-card" id="mairie-ouzouer" data-mairie="ouzouer">
                                     <div class="mairie-card-header">
                                         <h4>Ouzouër-sur-Trézée</h4>
@@ -653,7 +621,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Pierrefitte-ès-Bois -->
                                 <div class="mairie-card" id="mairie-pierrefitte" data-mairie="pierrefitte">
                                     <div class="mairie-card-header">
                                         <h4>Pierrefitte-ès-Bois</h4>
@@ -672,7 +639,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Saint-Firmin-sur-Loire -->
                                 <div class="mairie-card" id="mairie-stfirmin" data-mairie="stfirmin">
                                     <div class="mairie-card-header">
                                         <h4>Saint-Firmin-sur-Loire</h4>
@@ -692,7 +658,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Thou -->
                                 <div class="mairie-card" id="mairie-thou" data-mairie="thou">
                                     <div class="mairie-card-header">
                                         <h4>Thou</h4>
@@ -716,7 +681,6 @@
                         </div>
                     </div>
 
-                    <!-- ===== 2. COMMUNAUTÉ DE COMMUNES ===== -->
                     <div class="accordion-item" id="communaute-communes">
                         <button class="accordion-header" aria-expanded="false">
                             <span>Communauté de communes Berry Loire Puisaye</span>
@@ -766,7 +730,6 @@
                         </div>
                     </div>
 
-                    <!-- ===== 3. CAF ===== -->
                     <div class="accordion-item" id="caf">
                         <button class="accordion-header" aria-expanded="false">
                             <span>CAF du Loiret</span>
@@ -809,7 +772,6 @@
                         </div>
                     </div>
 
-                    <!-- ===== 4. MSA ===== -->
                     <div class="accordion-item" id="msa">
                         <button class="accordion-header" aria-expanded="false">
                             <span>MSA Beauce Cœur de Loire</span>
@@ -852,7 +814,6 @@
                         </div>
                     </div>
 
-                    <!-- ===== 5. ADS ===== -->
                     <div class="accordion-item" id="ads">
                         <button class="accordion-header" aria-expanded="false">
                             <span>Agence Départementale des Solidarités</span>
@@ -898,16 +859,11 @@
                     </div>
 
                 </div>
-                <!-- ===== FIN ACCORDÉON ===== -->
-
             </div>
         </section>
     </main>
 
-    <!-- ===== FOOTER (injecté par script.js) ===== -->
     <footer class="footer" id="siteFooter"></footer>
-
-    <!-- ===== SCRIPT UNIFIÉ ===== -->
     <script src="script.js"></script>
 </body>
 </html>
