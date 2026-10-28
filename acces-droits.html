@@ -28,9 +28,6 @@
             --secondary-light: #FF8CD2;
         }
 
-        /* ============================================================
-           ✅ LAYOUT "LOGO + TEXTE" DANS LES ACCORDÉONS
-           ============================================================ */
         .accordion-content-row {
             display: flex;
             flex-direction: column;
@@ -91,9 +88,6 @@
             }
         }
 
-        /* ============================================================
-           IMAGES DE L'ACCORDÉON (miniatures)
-           ============================================================ */
         .accordion-body-inner {
             display: flex;
             flex-direction: column;
@@ -140,13 +134,9 @@
 </head>
 <body class="page-acces-droits">
 
-    <!-- ===== HEADER (injecté par script.js) ===== -->
     <header class="header" id="siteHeader"></header>
+    <nav class="nav" id="mainNav"></nav>
 
-      <!-- ===== NAV ===== -->
-   <nav class="nav" id="mainNav"></nav>
-
-    <!-- ===== MAIN ===== -->
     <main>
         <section class="section">
             <div class="container">
@@ -157,7 +147,6 @@
 
                 <p class="quote">"La liberté c'est le respect des droits de chacun ; l'ordre c'est le respect des droits de tous." - Mirabeau</p>
 
-                <!-- ===== ACCORDÉON ===== -->
                 <div class="accordion">
 
                     <!-- ===== 1. RÉSEAU FRANCE SERVICES ===== -->
@@ -196,7 +185,7 @@
                                     📞 <a href="tel:0238051874">02 38 05 18 74</a><br>
                                     📧 <a href="mailto:bonny-sur-loire@france-services.gouv.fr">bonny-sur-loire@france-services.gouv.fr</a></p>
                                     <p><strong>📍 Espace Service Public (itinérant)</strong><br>
-                                    Non labelisé France Service, ce dispositif mis en place par la Communauté de communes Berry Loire Puisaye s'adapte à vos besoins et à vos disponibilités sur rendez-vous au siège de la Communauté de communes ou dans votre commune dans des salles réservées à cet effet.<br>
+                                    Non labellisé France Service, ce dispositif mis en place par la Communauté de communes Berry Loire Puisaye s'adapte à vos besoins et à vos disponibilités sur rendez-vous au siège de la Communauté de communes ou dans votre commune dans des salles réservées à cet effet.<br>
                                     Valérie Joly<br>
                                     42, rue des Prés Gris - 45 250 Briare<br>
                                     📞 <a href="tel:0238051803">02 38 05 18 03</a> - <a href="tel:0630000250">06 30 00 02 50</a><br>
@@ -311,7 +300,7 @@
                                     📞 <a href="tel:0238515042">02 38 51 50 42</a> ou <a href="tel:0238517742">02 38 51 77 42</a><br>
                                     📧 <a href="mailto:interventionsociale-caf45@caf45.caf.fr">interventionsociale-caf45@caf45.caf.fr</a></p>
                                     <p>Pour toute autre demande et information concernant vos droits, vous pouvez contacter un agent au 📞 <a href="tel:3230">3230</a> ou sur l'un de nos points d'accueil.<br>
-                                       Retrouver où et comment nous contacter sur le site   🌐 <a href="https://www.caf.fr/allocataires/caf-du-loiret" target="_blank" rel="noopener">www.caf.fr</a></p></p>
+                                       Retrouver où et comment nous contacter sur le site 🌐 <a href="https://www.caf.fr/allocataires/caf-du-loiret" target="_blank" rel="noopener">www.caf.fr</a></p>
                                 </div>
                             </div>
 
@@ -349,15 +338,19 @@
                                 <div class="text-col">
                                     <div class="short-text">
                                         <p><strong>Au quotidien, la Mutualité Sociale Agricole :</strong></p>
-                                        <li><p><strong>Mobilise des prestations d'action sociale</strong> permettant de mieux concilier vie familiale et professionnelle en :</li>
-                                        - favorisant le recours à des modes de garde diversifiés et/ou l'accès des enfants aux activités de loisirs, culturelles et sportives,<br>
-                                        - proposant des aides aux études et aux frais de scolarité,<br>
-                                        - finançant de l'aide à domicile en faveur des familles à des moments charnières de la vie.</p>
+                                        <ul>
+                                            <li><p><strong>Mobilise des prestations d'action sociale</strong> permettant de mieux concilier vie familiale et professionnelle en :<br>
+                                            - favorisant le recours à des modes de garde diversifiés et/ou l'accès des enfants aux activités de loisirs, culturelles et sportives,<br>
+                                            - proposant des aides aux études et aux frais de scolarité,<br>
+                                            - finançant de l'aide à domicile en faveur des familles à des moments charnières de la vie.</p></li>
+                                        </ul>
                                     </div>
                                     <div class="full-text">
                                         <p>Ce soutien se poursuit dans l'avancée en âge en prévenant la perte d'autonomie et le maintien à domicile en finançant des aides techniques et de l'aide à domicile.</p>
-                                        <li><p><strong>Propose un accompagnement social</strong> pour soutenir les familles fragilisées par des événements de la vie, par des difficultés financières, de santé ou suite à une séparation et/ou dans le cadre de la prévention du mal-être.</li></p>
-                                        <li><p><strong>Accompagne / soutient</strong> les territoires ruraux et/ou fragiles dans le développement et la création d'établissements d'accueil, services d'accompagnement, d'actions destinés au mieux-vivre des familles.</li></p>
+                                        <ul>
+                                            <li><p><strong>Propose un accompagnement social</strong> pour soutenir les familles fragilisées par des événements de la vie, par des difficultés financières, de santé ou suite à une séparation et/ou dans le cadre de la prévention du mal-être.</p></li>
+                                            <li><p><strong>Accompagne / soutient</strong> les territoires ruraux et/ou fragiles dans le développement et la création d'établissements d'accueil, services d'accompagnement, d'actions destinés au mieux-vivre des familles.</p></li>
+                                        </ul>
                                         <p>Une équipe de professionnels est présente sur les territoires pour accompagner, prévenir et informer les adhérents MSA.</p>
                                     </div>
                                     <button class="read-more-btn">Lire la suite</button>
@@ -487,16 +480,11 @@
                     </div>
 
                 </div>
-                <!-- ===== FIN ACCORDÉON ===== -->
-
             </div>
         </section>
     </main>
 
-    <!-- ===== FOOTER (injecté par script.js) ===== -->
     <footer class="footer" id="siteFooter"></footer>
-
-    <!-- ===== SCRIPT UNIFIÉ ===== -->
     <script src="script.js"></script>
 </body>
 </html>
